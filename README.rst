@@ -59,8 +59,9 @@ The hard but safe way
    environment.
 4. Save the script to ``/etc/init.d/mediagoblin-paster`` (without the ``.sh``
    file extension)
-5. Run ``sudo insserv mediagoblin-paster``.
-6. *Repeat all steps again, but with mediagoblin-celeryd.*
+5. Make the script executable for user (``sudo chmod u+x /etc/init.d/mediagoblin-paster``)
+6. Run ``sudo insserv mediagoblin-paster``.
+7. *Repeat all steps again, but with mediagoblin-celeryd.*
 
 Now, to start the services, simply run 
 ``sudo service mediagoblin-paster start`` and
